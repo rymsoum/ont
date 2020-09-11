@@ -1,0 +1,1492 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/s-com/ontologies/2020/6/untitled-ontology-27#"
+     xml:base="http://www.semanticweb.org/s-com/ontologies/2020/6/untitled-ontology-27"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:cloudontology="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/s-com/ontologies/2020/6/untitled-ontology-27"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#belongingTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#belongingTo">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Cloud"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasAPI -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasAPI">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#API"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasResources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasArchitecture -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasArchitecture">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasResources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasCAZ -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasCAZ">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PhysicalLocation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasCPU -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasCPU">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CPU"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasResources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasCommunityModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasCommunityModel">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Community"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDeploymentModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasCreator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasCreator">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDataBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDataBase">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DataBase"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasResources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDeliveryModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDeliveryModel">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeliveryModel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDeploymentModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDeploymentModel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDevelopmentEnvironment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDevelopmentEnvironment">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DevelopmentEnvironment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasResources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDevelopmentLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDevelopmentLanguage">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ProgramingLanguage"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasResources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasExecutionTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasExecutionTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasFunction">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Function"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasHybridModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasHybridModel">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Hybrid"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDeploymentModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasIaaSModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasIaaSModel">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#IaaS"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDeliveryModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasLocation">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PhysicalLocation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasMemory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasMemory">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasResources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasNetworkBandwidth -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasNetworkBandwidth">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasResources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasNetworkTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasNetworkTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasPaaSModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasPaaSModel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDeliveryModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasPrivateModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasPrivateModel">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Private"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDeploymentModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasProvider -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasProvider">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Provider"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasPublicModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasPublicModel">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Public"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDeploymentModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasReputation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasReputation">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasResources -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasResources"/>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasResponseTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasResponseTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasRisk -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasRisk">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risk"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasSaaSModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasSaaSModel">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#SaaS"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasDeliveryModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasStorage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasStorage">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasResources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Cloud"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasCPUSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasCPUSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CPU"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasSaaSSize"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasPrice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasReputationValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasReputationValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasRiskValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasRiskValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasSaaSSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#hasSaaSSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#API -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#API">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#AdministrativeArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#AdministrativeArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PhysicalLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Architecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Architecture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Auditor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Auditor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Intermediary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Bandwidth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Bandwidth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Broker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Broker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Intermediary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CPU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CPU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Carrier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Carrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Intermediary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Community -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Community">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeploymentModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CompositeService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CompositeService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Constant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Constant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Consumer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Consumer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ContextModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ContextModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DataBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DataBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeliveryModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeliveryModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeploymentModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeploymentModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DevelopmentEnvironment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DevelopmentEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ElectonicAddressRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ElectonicAddressRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ElectronicAddress"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ElectronicAddress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ElectronicAddress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Function">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#FunctionalModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#FunctionalModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#FunctionalModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#GeographicLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#GeographicLocation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PhysicalLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#GuaranteeAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#GuaranteeAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#GuaranteeState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#GuaranteeState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Hybrid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Hybrid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeploymentModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#IaaS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#IaaS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeliveryModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Intermediary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Intermediary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#LegalModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#LegalModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#License -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#License">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#LegalModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ContextModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Memory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Memory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#MessagingAddress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#MessagingAddress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ElectronicAddress"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Metric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Metric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#OperatingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#OperatingSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PaaS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PaaS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeliveryModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Parameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Parameter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#FunctionalModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ParticipantModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ParticipantModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PaymentMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PaymentMethod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PricingModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PaymentTerms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PaymentTerms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PricingModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PhysicalLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PhysicalLocation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PriceAdjustment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PriceAdjustment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PriceComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PriceComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PriceComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PricingModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PricePlan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PricePlan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PricingModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PricingModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PricingModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeploymentModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ProgramingLanguage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ProgramingLanguage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Protocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Protocol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#TechnicalModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Provider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeploymentModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ContextModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Restriction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Restriction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#LegalModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Role">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ParticipantModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#SaaS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#SaaS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeliveryModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelAttribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelAttribute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelExpression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelExpression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelProfile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelProfile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelModule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Tax -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Tax">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PriceComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#TechnicalModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#TechnicalModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#TimeRestriction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#TimeRestriction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Restriction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Trust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Trust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#UsageRight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#UsageRight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#License"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#UsageType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#UsageType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#License"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#VariableReference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#VariableReference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceLevelAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Addition -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Addition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Function"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#FunctionalModule"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Develop_Application -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Develop_Application">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Function"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#FunctionalModule"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Fella -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Fella">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ParticipantModule"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Provider"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Role"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Hadjer -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Hadjer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ParticipantModule"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Provider"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Role"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#IaaS -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#IaaS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeliveryModel"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#IaaS"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Lina -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Lina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ParticipantModule"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Provider"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Role"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PaaS -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PaaS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeliveryModel"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PaaS"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Public -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Public">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeploymentModel"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Public"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationAdd1 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationAdd1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasReputationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3</cloudontology:hasReputationValue>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationAdd2 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationAdd2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasReputationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4</cloudontology:hasReputationValue>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationDevApp -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationDevApp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasReputationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3</cloudontology:hasReputationValue>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationDevApp2 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationDevApp2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasReputationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3</cloudontology:hasReputationValue>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationStorage -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationStorage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasReputationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4</cloudontology:hasReputationValue>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputationsous1 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputationsous1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasReputationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1</cloudontology:hasReputationValue>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputationsous2 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputationsous2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasReputationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</cloudontology:hasReputationValue>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskAdd1 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskAdd1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasRiskValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.2</cloudontology:hasRiskValue>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskAdd2 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskAdd2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasRiskValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1</cloudontology:hasRiskValue>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskDevApp -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskDevApp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasRiskValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.2</cloudontology:hasRiskValue>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskDevApp2 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskDevApp2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasRiskValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.2</cloudontology:hasRiskValue>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskStorage -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskStorage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasRiskValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.2</cloudontology:hasRiskValue>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risksous1 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risksous1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasRiskValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4</cloudontology:hasRiskValue>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risksous2 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risksous2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#EvaluationService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasRiskValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1</cloudontology:hasRiskValue>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Rym -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Rym">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ParticipantModule"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Provider"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Role"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#SaaS -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#SaaS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#DeliveryModel"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#SaaS"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceAddition1 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceAddition1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1500.0</cloudontology:hasPrice>
+        <cloudontology:hasFunction rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Addition"/>
+        <cloudontology:hasDeploymentModel rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Public"/>
+        <cloudontology:hasReputation rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationAdd1"/>
+        <cloudontology:hasRisk rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskAdd1"/>
+        <cloudontology:hasProvider rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Rym"/>
+        <cloudontology:hasDeliveryModel rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#SaaS"/>
+        <cloudontology:belongingTo rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#cloud1"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceAddition2 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceAddition2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1600.0</cloudontology:hasPrice>
+        <cloudontology:hasFunction rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Addition"/>
+        <cloudontology:hasDeploymentModel rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Public"/>
+        <cloudontology:hasReputation rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationAdd2"/>
+        <cloudontology:hasRisk rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskAdd2"/>
+        <cloudontology:hasDeliveryModel rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#SaaS"/>
+        <cloudontology:hasProvider rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Soumia"/>
+        <cloudontology:belongingTo rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#cloud2"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceDevApp2 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceDevApp2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1500.0</cloudontology:hasPrice>
+        <cloudontology:hasFunction rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Develop_Application"/>
+        <cloudontology:hasDeliveryModel rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#PaaS"/>
+        <cloudontology:hasDeploymentModel rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Public"/>
+        <cloudontology:hasReputation rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationDevApp2"/>
+        <cloudontology:hasRisk rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskDevApp2"/>
+        <cloudontology:hasProvider rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Rym"/>
+        <cloudontology:belongingTo rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#cloud1"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceDevelopAplication -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceDevelopAplication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1500.0</cloudontology:hasPrice>
+        <cloudontology:hasFunction rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Develop_Application"/>
+        <cloudontology:hasProvider rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Lina"/>
+        <cloudontology:hasDeploymentModel rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Public"/>
+        <cloudontology:hasReputation rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationDevApp"/>
+        <cloudontology:hasRisk rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskDevApp"/>
+        <cloudontology:belongingTo rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#cloud3"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceSoustraction1 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceSoustraction1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">800.0</cloudontology:hasPrice>
+        <cloudontology:hasProvider rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Fella"/>
+        <cloudontology:hasDeploymentModel rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Public"/>
+        <cloudontology:hasReputation rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputationsous1"/>
+        <cloudontology:hasRisk rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risksous1"/>
+        <cloudontology:hasDeliveryModel rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#SaaS"/>
+        <cloudontology:hasFunction rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Soustraction"/>
+        <cloudontology:belongingTo rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#cloud2"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceSoustraction2 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceSoustraction2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1000.0</cloudontology:hasPrice>
+        <cloudontology:hasProvider rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Hadjer"/>
+        <cloudontology:hasDeploymentModel rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Public"/>
+        <cloudontology:hasReputation rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Reputationsous2"/>
+        <cloudontology:hasRisk rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Risksous2"/>
+        <cloudontology:hasDeliveryModel rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#SaaS"/>
+        <cloudontology:hasFunction rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Soustraction"/>
+        <cloudontology:belongingTo rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#cloud2"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceStorage -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceStorage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Service"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <cloudontology:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1300.0</cloudontology:hasPrice>
+        <cloudontology:hasDeliveryModel rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#IaaS"/>
+        <cloudontology:hasProvider rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Lina"/>
+        <cloudontology:hasDeploymentModel rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Public"/>
+        <cloudontology:hasReputation rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ReputationStorage"/>
+        <cloudontology:hasRisk rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#RiskStorage"/>
+        <cloudontology:hasFunction rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Storage"/>
+        <cloudontology:belongingTo rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#cloud2"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Soumia -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Soumia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ParticipantModule"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Provider"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Role"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Soustraction -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Soustraction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Function"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#FunctionalModule"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Storage -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Storage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Function"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#FunctionalModule"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#cloud1 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#cloud1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Cloud"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#cloud2 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#cloud2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Cloud"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#cloud3 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#cloud3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Cloud"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#CloudService"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#Root"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/atika/ontologies/2017/11/cloudontology#ServiceModule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.8.1099) http://owlapi.sourceforge.net -->
+
